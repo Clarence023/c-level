@@ -1,0 +1,195 @@
+program 1:
+#include <stdio.h>
+int main()
+{
+    int x,y;
+    scanf("%d",&x);
+    if (x==50){
+        printf("Success");
+    }
+    else{
+        printf("Failure");
+    }
+}
+
+program 2:
+#include <stdio.h>
+int main()
+{
+    int x,y;
+    scanf("%d",&x);
+    if (x==50){
+        printf("Success");
+    }
+    else{
+        printf("Failure");
+    }
+}
+
+program 3:
+#include <stdio.h>
+int main()
+{
+    int x,y;
+    scanf("%d",&x);
+    if (x<50){
+        printf("Success");
+    }
+    else{
+        printf("Failure");
+    }
+}
+
+program 4:
+#include <stdio.h>
+int main()
+{
+    int x,y;
+    scanf("%d",&x);
+    if (x>50){
+        printf("Success");
+    }
+    else{
+        printf("Failure");
+    }
+}
+
+program 5:
+#include <stdio.h>
+int main()
+{
+    int x,y;
+    scanf("%d",&x);
+    if (x<=50){
+        printf("Success");
+    }
+    else{
+        printf("Failure");
+    }
+}
+
+program 6:
+#include <stdio.h>
+int main()
+{
+    int x,y;
+    scanf("%d",&x);
+    if (x>=50){
+        printf("Success");
+    }
+    else{
+        printf("Failure");
+    }
+}
+
+program 7:
+#include <stdio.h>
+int main()
+{
+    int x,y;
+    scanf("%d",&x);
+    if ((x%10)==(x/10)%10){
+        printf("Success");
+    }
+    else{
+        printf("Failure");
+    }
+}
+
+program 8:
+#include <stdio.h>
+int main()
+{
+    int x,y;
+    scanf("%d",&x);
+    if ((x%10)!=(x/10)%10){
+        printf("Success");
+    }
+    else{
+        printf("Failure");
+    }
+}
+
+program 9:
+#include <stdio.h>
+int main()
+{
+    int x,y;
+    scanf("%d",&x);
+    if ((x%10)<(x/10)%10){
+        printf("Success");
+    }
+    else{
+        printf("Failure");
+    }
+}
+
+program 10:
+#include <stdio.h>
+int main()
+{
+    int x,y;
+    scanf("%d",&x);
+    if ((x%10)>(x/10)%10){
+        printf("Success");
+    }
+    else{
+        printf("Failure");
+    }
+}
+
+program 11:
+#include <stdio.h>
+int main()
+{
+    int x,y;
+    scanf("%d",&x);
+    if ((x/10)%10<=x%10){
+        printf("Success");
+    }
+    else{
+        printf("Failure");
+    }
+}
+
+program 12:
+#include <stdio.h>
+int main()
+{
+    int x,y;
+    scanf("%d",&x);
+    if ((x/10)%10>=x%10){
+        printf("Success");
+    }
+    else{
+        printf("Failure");
+    }
+}
+
+program 13:
+#include <stdio.h>
+int main()
+{
+    int x,y;
+    scanf("%d",&x);
+    if ((x/10)%10==x%10){
+        printf("Success");
+    }
+    else{
+        printf("Failure");
+    }
+}
+
+program 14:
+#include <stdio.h>
+int main()
+{
+    int x,y;
+    scanf("%d",&x);
+    if (((x/10)%10*10+x%10)==(x/1000)%10*10+(x/100)%10){
+        printf("Success");
+    }
+    else{
+        printf("Failure");
+    }
+}
