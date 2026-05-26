@@ -1,0 +1,125 @@
+program 1:
+#include <stdio.h>
+int main()
+{
+    int x,y;
+    scanf("%d",&x);
+    printf("%d",x==50);
+}
+
+program 2:
+#include <stdio.h>
+int main()
+{
+    int x,y;
+    scanf("%d",&x);
+    printf("%d",x!=50);
+}
+
+program 3:
+#include <stdio.h>
+int main()
+{
+    int x,y;
+    scanf("%d",&x);
+    printf("%d",x<50);
+}
+
+program 4:
+#include <stdio.h>
+int main()
+{
+    int x,y;
+    scanf("%d",&x);
+    printf("%d",x>50);
+}
+
+program 5:
+#include <stdio.h>
+int main()
+{
+    int x,y;
+    scanf("%d",&x);
+    printf("%d",x>=50);
+}
+
+program 6:
+#include <stdio.h>
+int main()
+{
+    int x,y;
+    scanf("%d",&x);
+    printf("%d",x>=50);
+}
+
+program 7:
+#include <stdio.h>
+int main()
+{
+    int x,y;
+    scanf("%d",&x);
+    printf("%d",x%10==(x/10)%10);
+}
+
+program 8:
+#include <stdio.h>
+int main()
+{
+    int x,y;
+    scanf("%d",&x);
+    printf("%d",x%10!=(x/10)%10);
+}
+
+program 9:
+#include <stdio.h>
+int main()
+{
+    int x,y;
+    scanf("%d",&x);
+    printf("%d",x%10<(x/10)%10);
+}
+
+program 10:
+#include <stdio.h>
+int main()
+{
+    int x,y;
+    scanf("%d",&x);
+    printf("%d",x%10>(x/10)%10);
+}
+
+program 11:
+#include <stdio.h>
+int main()
+{
+    int x,y;
+    scanf("%d",&x);
+    printf("%d",(x/10)%10<=x%10);
+}
+
+program 12:
+#include <stdio.h>
+int main()
+{
+    int x,y;
+    scanf("%d",&x);
+    printf("%d",(x/10)%10>=x%10);
+} 
+
+program 13:
+#include <stdio.h>
+int main()
+{
+    int x,y;
+    scanf("%d",&x);
+    printf("%d",(x/10)%10==x%10);
+}
+
+program 14:
+#include <stdio.h>
+int main()
+{
+    int x,y;
+    scanf("%d",&x);
+    printf("%d",((x/1000)%10*10+(x/100)%10)==((x/10)%10*10+(x%10)));
+}
