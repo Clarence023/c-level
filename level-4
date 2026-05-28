@@ -1,0 +1,217 @@
+progam 1:
+#include <stdio.h>
+int main()
+{
+    int x=1;
+    loop: if(x<6){
+        printf("%d\n",x);
+        x++;
+        goto loop;
+    }
+}
+
+program 2:
+#include <stdio.h>
+int main()
+{
+    int x=5;
+    loop: if(x>0){
+        printf("%d\n",x);
+        x--;
+        goto loop;
+    }
+}
+
+program 3:
+#include <stdio.h>
+int main()
+{
+    int x=0,y=0;
+    loop: if(x<6){
+        y=y+x;
+        x++;
+        goto loop;
+    }
+    printf("%d",y);
+}
+
+program 4:
+#include <stdio.h>
+int main()
+{
+    int x=6,y=0;
+    loop: if(x>0){
+        y=y+x;
+        x--;
+        goto loop;
+    }
+    printf("%d",y);
+}
+
+program 5:
+#include <stdio.h>
+int main()
+{
+    int x=0;
+    loop: if(x<10){
+        if(x%2==1){
+        printf("%d\n",x);
+        }
+        x++;
+        goto loop;
+    }
+} 
+
+program 6:
+#include <stdio.h>
+int main()
+{
+    int x=10;
+    loop: if(x<20){
+        if(x%2==1){
+        printf("%d\n",x);
+        }
+        x++;
+        goto loop;
+    }
+}
+
+program 7:
+#include <stdio.h>
+int main()
+{
+    int x=10;
+    loop: if(x<99){
+        if(x%10+(x/10)%10==7&&x%2==1){
+        printf("%d\n",x);
+        }
+        x++;
+        goto loop;
+    }
+}
+
+program 8:
+#include <stdio.h>
+int main()
+{
+    int x=10;
+    loop: if(x<99){
+        if(x%10+(x/10)%10==6&&x%2==0){
+        printf("%d\n",x);
+        }
+        x++;
+        goto loop;
+    }
+}
+
+program 9:
+#include <stdio.h>
+int main()
+{
+    int x=10,y=0;
+    loop: if(x<99){
+        if((x/10)%10==7&&x%2==1){
+        y=y+x;
+        }
+        x++;
+        goto loop;
+    }printf("%d",y);
+}
+
+program 10:
+#include <stdio.h>
+int main()
+{
+    int x=0,y=0;
+    scanf("%d",&x);
+    loop: if(x>0){
+        x=x/10;
+        y++;
+        goto loop;
+    }printf("%d",y);
+}
+
+program 11:
+#include <stdio.h>
+int main()
+{
+    int x=0,y=0;
+    scanf("%d",&x);
+    loop: if(x>0){
+        y+=x%10;
+        x=x/10;
+        goto loop;
+    }printf("%d",y);
+}
+
+program 12:
+#include <stdio.h>
+int main()
+{
+    int x=0,y=0;
+    scanf("%d",&x);
+    loop: if(x>0){
+        y=x%10+y*10;
+        x=x/10;
+        goto loop;
+    }printf("%d",y);
+}
+
+program 13:
+#include<stdio.h>
+int main()
+{
+int x=0,y=1;
+scanf("%d",&x);
+loop:
+if(x/y>=10)
+{
+y=y*10;
+goto loop;
+}
+x=(x%10)*y+(x%y/10)*10+x/y;
+printf("%d",x);
+}
+
+program 14:
+#include<stdio.h>
+int main()
+{
+int x=0,y=2;
+scanf("%d",&x);
+loop:
+if(y<x)
+{
+if(x%y==0)
+{
+printf("Not Prime");
+return 0;
+}
+y++;
+goto loop;
+}
+printf("Prime");
+return 0;
+}
+
+program 15:
+#include<stdio.h>
+int main()
+{
+int x=0,y=2;
+scanf("%d",&x);
+loop:
+if(y<x)
+{
+if(x%y==0)
+{
+printf("Not Prime");
+return 0;
+}
+y++;
+goto loop;
+}
+printf("Prime");
+return 0;
+}
+
