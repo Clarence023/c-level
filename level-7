@@ -1,0 +1,573 @@
+program 1:
+#include <stdio.h>
+void disp_assend(int x);
+int main() {
+    int x = 1;
+    disp_assend(x);
+}
+void disp_assend(int x) {
+    int i;
+    for(i = x; i < x + 5; i++) {
+        printf("%d\n", i);
+    }
+}
+
+
+program 2:
+#include <stdio.h>
+void disp_desend(int x);
+int main() {
+    int x = 5;
+    disp_desend(x);
+}
+void disp_desend(int x) {
+    int i;
+    for(i = x; i > x - 5; i--) {
+        printf("%d\n", i);
+    }
+}
+
+
+program 3:
+#include <stdio.h>
+void disp_sum();
+int main() {
+    disp_sum();
+}
+void disp_sum() {
+    int i, sum = 0;
+    for(i = 1; i <= 5; i++) {
+        sum += i;
+    }
+    printf("%d\n", sum);
+}
+
+
+program 4:
+#include <stdio.h>
+void rsum();
+int main() {
+    rsum();
+}
+void rsum() {
+    int i, sum = 0;
+    for(i = 6; i >= 1; i--) {
+        sum += i;
+    }
+    printf("%d\n", sum);
+}
+
+
+program 5:
+#include <stdio.h>
+void odd();
+int main() {
+    odd();
+}
+void odd() {
+    int i;
+    for(i = 1; i <= 9; i++) {
+        if(i % 2 != 0) {
+            printf("%d\n", i);
+        }
+    }
+}
+
+
+program 6:
+#include <stdio.h>
+void  disp_2digit_odd_below20();
+int main() {
+    disp_2digit_odd_below20();
+}
+void disp_2digit_odd_below20() {
+    int i;
+    for(i = 10; i <= 20; i++) {
+        if(i%2==1){
+        printf("%d\n", i);
+    }}
+}
+
+
+program 7:
+#include <stdio.h>
+void  disp_2digit_odd_sum7();
+int main() {
+    disp_2digit_odd_sum7();
+}
+void disp_2digit_odd_sum7() {
+    int i;
+    for(i = 10; i <= 99; i++) {
+        if(i%2==1&& (i%10+(i/10)%10)==7){
+        printf("%d\n", i);
+    }}
+}
+
+
+program 8:
+#include <stdio.h>
+void  disp_2digit_even_sum6();
+int main() {
+    disp_2digit_even_sum6();
+}
+void disp_2digit_even_sum6() {
+    int i;
+    for(i = 10; i <= 99; i++) {
+        if(i%2==0&& (i%10+(i/10)%10)==6){
+        printf("%d\n", i);
+    }}
+}
+
+
+program 9:
+#include <stdio.h>
+void  disp_2digit_ones5();
+int main() {
+    disp_2digit_ones5();
+}
+void disp_2digit_ones5() {
+    int i,count=0;
+    for(i = 10; i <= 99; i++) {
+        if(i%10==5){
+            count +=i;}}
+        printf("%d\n", count);
+}
+
+
+program 10:
+#include <stdio.h>
+void  disp_2digit_odd_sum_tens7();
+int main() {
+    disp_2digit_odd_sum_tens7();
+}
+void disp_2digit_odd_sum_tens7() {
+    int i,count=0;
+    for(i = 10; i <= 99; i++) {
+        if(i%2==1&&(i/10)%10==7){
+            count +=i;}}
+        printf("%d\n", count);
+}
+
+
+program 11:
+#include <stdio.h>
+void count_total_digits(int n);
+int main() {
+    int num;
+    scanf("%d", &num);
+    count_total_digits(num);
+}
+void count_total_digits(int n) {
+    int count = 0;
+    while(n != 0) {
+        n = n / 10;
+        count++;
+    }
+    printf("%d\n", count);
+}
+
+
+progarm 12:
+#include <stdio.h>
+void disp_sum_all_digits(int n);
+int main() {
+    int num;
+    scanf("%d", &num);
+    disp_sum_all_digits(num);
+}
+void disp_sum_all_digits(int n) {
+    int sum = 0;
+    while(n != 0) {
+        sum += n % 10;
+        n = n / 10;
+    }
+    printf("%d\n", sum);
+}
+
+
+program 13:
+#include <stdio.h>
+void disp_reverse_number(int n);
+int main() {
+    int num;
+    scanf("%d", &num);
+    disp_reverse_number(num);
+}
+void disp_reverse_number(int n) {
+    int rev = 0;
+    while(n != 0) {
+        rev = rev * 10 + (n % 10);
+        n = n / 10;
+    }
+    printf("%d\n", rev);
+}
+
+
+program 14:
+#include <stdio.h>
+void disp_interchange_first_last_digit(int n);
+int main() {
+    int num;
+    scanf("%d", &num);
+    disp_interchange_first_last_digit(num);
+}
+void disp_interchange_first_last_digit(int n) {
+    int first, last, temp, digits = 0, pow10 = 1;
+    temp = n;
+    last = temp % 10;
+    while(temp >= 10) {
+        temp /= 10;
+        digits++;
+        pow10 *= 10;
+    }
+    first = temp;
+    if(digits == 0) {
+        printf("%d\n", n);
+         
+    }
+    n = n - first * pow10 - last;
+    n = n + last * pow10 + first;
+    printf("%d\n", n);
+}
+
+
+program 15:
+#include <stdio.h>
+void check_last_digit_odd(int n);
+int main() {
+    int num;
+    scanf("%d", &num);
+    check_last_digit_odd(num);
+}
+void check_last_digit_odd(int n) {
+    int last = n % 10;
+    if(last % 2 != 0) {
+        n = n - 1;
+    }
+    printf("%d\n", n);
+}
+
+
+program 16:
+#include <stdio.h>
+void check_prime(int n);
+int main() {
+    int num;
+    scanf("%d", &num);
+    check_prime(num);
+}
+void check_prime(int n) {
+    int i, flag = 0;
+    if(n <= 1) {
+        printf("Not Prime\n");
+         
+    }
+    for(i = 2; i <= n / 2; i++) {
+        if(n % i == 0) {
+            flag = 1;
+            break;
+        }
+    }
+    if(flag == 0) {
+        printf("Prime\n");
+    } else {
+        printf("Not Prime\n");
+    }
+}
+
+
+program 17:
+#include <stdio.h>
+void check_prime_and_sum14(int n);
+int main() {
+    int num;
+    scanf("%d", &num);
+    check_prime_and_sum14(num);
+}
+void check_prime_and_sum14(int n) {
+    int i, flag = 0, sum = 0, temp = n;
+    if(n <= 1) {
+        printf("Not Prime & Sum of Digits is not 14\n");
+         
+    }
+    for(i = 2; i <= n / 2; i++) {
+        if(n % i == 0) {
+            flag = 1;
+            break;
+        }
+    }
+    while(temp != 0) {
+        sum += temp % 10;
+        temp /= 10;
+    }
+    if(flag == 0 && sum == 14) {
+        printf("Prime & Sum of Digits is 14\n");
+    } else if(flag == 0 && sum != 14) {
+        printf("Prime & Sum of Digits is not 14\n");
+    } else if(flag == 1 && sum == 14) {
+        printf("Not Prime but Sum of Digits is 14\n");
+    } else {
+        printf("Not Prime & Sum of Digits is not 14\n");
+    }
+}
+
+
+program 18:
+#include <stdio.h>
+void check_first_2digits_prime(int n);
+int main() {
+    int num;
+    scanf("%d", &num);
+    check_first_2digits_prime(num);
+}
+void check_first_2digits_prime(int n) {
+    int last2 = n % 100;
+    int i, flag = 0;
+
+    if(last2 <= 1) {
+        printf("Not Prime\n");
+         
+    }
+    for(i = 2; i <= last2 / 2; i++) {
+        if(last2 % i == 0) {
+            flag = 1;
+            break;
+        }
+    }
+    if(flag == 0) {
+        printf("Prime\n");
+    } else {
+        printf("Not Prime\n");
+    }
+}
+
+
+program 19:
+#include <stdio.h>
+void middle_2digits_prime(int n);
+int main() {
+    int num;
+    scanf("%d", &num);
+    middle_2digits_prime(num);
+}
+void middle_2digits_prime(int n) {
+    int mid2 = (n / 10) % 100;
+    int i, flag = 0;
+
+    if(mid2 <= 1) {
+        printf("Not Prime\n");
+         
+    }
+    for(i = 2; i <= mid2 / 2; i++) {
+        if(mid2 % i == 0) {
+            flag = 1;
+            break;
+        }
+    }
+    if(flag == 0) {
+        printf("Prime\n");
+    } else {
+        printf("Not Prime\n");
+    }
+}
+
+
+program 20:
+#include <stdio.h>
+void disp_2digit_even_sum6();
+int main() {
+    disp_2digit_even_sum6();
+}
+void disp_2digit_even_sum6() {
+    int primes[] = {2, 3, 5, 7};
+    int count = 0, i;
+    for(i = 0; i < 4; i++) {
+        count++;
+    }
+    printf("%d\n", count);
+}
+
+
+program 21:
+#include <stdio.h>
+void disp_total_odd_digits(int n);
+int main() {
+    int num;
+    scanf("%d", &num);
+    disp_total_odd_digits(num);
+}
+void disp_total_odd_digits(int n) {
+    int count = 0;
+    while(n != 0) {
+        if((n % 10) % 2 != 0) {
+            count++;
+        }
+        n = n / 10;
+    }
+    printf("%d\n", count);
+}
+
+
+program 22:
+#include <stdio.h>
+void disp_total_2digit_odd(int n);
+int main() {
+    int num;
+    scanf("%d", &num);
+    disp_total_2digit_odd(num);
+}
+void disp_total_2digit_odd(int n) {
+    int count = 0;
+    while(n >= 10) {
+        int two = n % 100;
+        if(two >= 10 && two % 2 != 0) {
+            count++;
+        }
+        n = n / 10;
+    }
+    printf("%d\n", count);
+}
+
+
+program 23:
+#include <stdio.h>
+void disp_two_digit_square(int n);
+int main() {
+    int num;
+    scanf("%d", &num);
+    disp_two_digit_square(num);
+}
+void disp_two_digit_square(int n) {
+    int count = 0;
+    while(n >= 10) {
+        int two = n % 100;
+        if(two == 16 || two == 25 || two == 36 || two == 49 || 
+           two == 64 || two == 81) {
+            count++;
+        }
+        n = n / 10;
+    }
+    printf("%d\n", count);
+}
+
+
+program 24:
+#include <stdio.h>
+void disp_single_digit_prime(int n);
+int main() {
+    int num;
+    scanf("%d", &num);
+    disp_single_digit_prime(num);
+}
+void disp_single_digit_prime(int n) {
+    int count = 0, d;
+    while(n != 0) {
+        d = n % 10;
+        if(d == 2 || d == 3 || d == 5 || d == 7) {
+            count++;
+        }
+        n = n / 10;
+    }
+    printf("%d\n", count);
+}
+
+
+program 25:
+#include <stdio.h>
+void disp_biggest_4digit_div7_9();
+int main() {
+    disp_biggest_4digit_div7_9();
+}
+void disp_biggest_4digit_div7_9() {
+    int n;
+    for(n = 9999; n >= 1000; n--) {
+        if(n % 7 == 0 && n % 9 == 0) {
+            printf("%d\n", n);
+            break;
+        }
+    }
+}
+
+
+program 26:
+#include <stdio.h>
+void disp_count_sum14();
+int main() {
+    disp_count_sum14();
+}
+void disp_count_sum14() {
+    int count = 0;
+    for(int n = 1; n < 100000; n++) {
+        int temp = n, sum = 0;
+        while(temp != 0) {
+            sum += temp % 10;
+            temp /= 10;
+        }
+        if(sum == 14) {
+            count++;
+        }
+    }
+    printf("%d\n", count);
+}
+
+
+program 27:
+#include <stdio.h>
+void disp_LCM2(int a, int b);
+int main() {
+    int x, y;
+    scanf("%d %d", &x, &y);
+    disp_LCM2(x, y);
+}
+void disp_LCM2(int a, int b) {
+    int max = (a > b) ? a : b;
+    while(1) {
+        if(max % a == 0 && max % b == 0) {
+            printf("%d\n", max);
+            break;
+        }
+        max++;
+    }
+}
+
+program 28:
+#include <stdio.h>
+void disp_LCM3(int a, int b, int c);
+int main() {
+    int x, y, z;
+    scanf("%d %d %d", &x, &y, &z);
+    disp_LCM3(x, y, z);
+}
+void disp_LCM3(int a, int b, int c) {
+    int max = (a > b) ? a : b;
+    max = (max > c) ? max : c;
+
+    while(1) {
+        if(max % a == 0 && max % b == 0 && max % c == 0) {
+            printf("%d\n", max);
+            break;
+        }
+        max++;
+    }
+}
+
+
+program 30:
+#include <stdio.h>
+void disp_count_HCF2(int a, int b);
+int main() {
+    int x, y;
+    scanf("%d %d", &x, &y);
+    disp_count_HCF2(x, y);
+}
+void disp_count_HCF2(int a, int b) {
+    int hcf, i;
+    for(i = (a < b ? a : b); i >= 1; i--) {
+        if(a % i == 0 && b % i == 0) {
+            hcf = i;
+            break;
+        }
+    }
+    printf("%d\n", hcf);
+}
+
